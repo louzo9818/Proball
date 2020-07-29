@@ -5,6 +5,9 @@ using Photon.Realtime;
 
 public class Launcher : MonoBehaviourPunCallbacks
 {
+    
+    #region Private Serializable Fields
+
     /// <summary>
     /// The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created.
     /// </summary>
@@ -12,9 +15,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField]
     private byte maxPlayersPerRoom = 4;
     
-    #region Private Serializable Fields
-
-
     #endregion
 
 
@@ -49,7 +49,6 @@ public class Launcher : MonoBehaviourPunCallbacks
     /// </summary>
     void Start()
     {
-        Connect();
     }
 
 
